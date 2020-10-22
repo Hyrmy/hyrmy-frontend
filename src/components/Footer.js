@@ -8,7 +8,7 @@ const Footer = () => (
       Full Stack -websovelluskehitys
     </a>.
     <br />
-    My rep <a href="https://github.com/PikkuHukka/hyrmy-sivut">
+    My rep <a href="https://github.com/Hyrmy">
       My github
     </a>
     for the source code.

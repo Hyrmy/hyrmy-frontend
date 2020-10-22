@@ -3,15 +3,11 @@ import React from "react";
 
 const Footer = () => (
   <div>
-    Blog app for
-    <a href="https://courses.helsinki.fi/fi/tkt21009">
-      Full Stack -websovelluskehitys
-    </a>.
-    <br />
-    My rep <a href="https://github.com/Hyrmy">
-      My github
-    </a>
-    for the source code.
+        {/*
+           Upcoming footer
+         */}
+
+
   </div>
 );
 

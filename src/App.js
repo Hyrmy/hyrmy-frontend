@@ -73,7 +73,6 @@ const App = props => {
                   </Route>
               </Switch>
 
-        <Footer />
       </Router>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { newLike, removeEvent } from '../reducers/eventReducer'
+import { removeEvent } from '../reducers/eventReducer'
 import { createSuccessNotification, createErrorNotification, clearNotification } from '../reducers/notificationReducer'
 import { Link } from "react-router-dom"
 import { Table } from 'react-bootstrap'
@@ -39,7 +39,6 @@ const eventsToShow = ({ events }) => {
 
 
 const dispatchToProps = {
-  newLike,
   removeEvent,
   createSuccessNotification,
   clearNotification,

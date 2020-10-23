@@ -53,26 +53,20 @@ const App = props => {
           <Route path="/events">
             <Events />
           </Route>
-
-
- {props.login ? (
-                     
-                          <Route path="/addevent">
-                              <EventForm />
-                          </Route>
+           {props.login ? ( 
+             <Route path="/addevent">
+                <EventForm />
+              </Route>
                       
                   ) : (
-                         
-                              <Route path="/login">
-                                  <LoginForm />
-                              </Route>
-                       
+              <Route path="/login">
+                 <LoginForm />
+                          </Route>
                       )}
                   <Route path="/">
                       <FrontPage />
                   </Route>
               </Switch>
-
       </Router>
     </div>
   );

@@ -34,7 +34,8 @@ const Event = props => {
     return (
       <div>
         <h2>{event.title}</h2>
-
+            <p>Time: {event.time}</p>
+            <p>Date: {event.date}</p>
         <p>Tapahtuma: {event.info}</p>
 
         {props.login ? (

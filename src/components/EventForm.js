@@ -8,7 +8,8 @@ import { Form, Button } from 'react-bootstrap'
 
 const EventForm = (props) => {
   const [newTitle, setNewTitle] = useState('')
-  const [newAuthor, setNewAuthor] = useState('')
+  const [newTime, setNewTime] = useState('')
+  const [newDate, setNewDate] = useState('')
   const [newInfo, setNewInfo] = useState('')
 
   const titleChange = (event) => {
@@ -16,14 +17,22 @@ const EventForm = (props) => {
   }
   const infoChange = (event) => {
     setNewInfo(event.target.value)
-  }
+    }
+    const timeChange = (event) => {
+        setNewTime(event.target.value)
+    }
+    const dateChange = (event) => {
+        setNewDate(event.target.value)
+    }
 
 
   const addEvent = (event) => {
     event.preventDefault()
     props.createEvent({
       title: newTitle,
-      info: newInfo,
+        info: newInfo,
+        time: newTime,
+        date: newDate
     }, props.user)
 
     props.createSuccessNotification(`Created new event: ${newTitle}.`)
@@ -32,8 +41,10 @@ const EventForm = (props) => {
     }, 5000)
 
 
-    setNewAuthor('')
+    setNewTitle('')
     setNewInfo('')
+    setNewTime('')
+    setNewDate('')
 
   }
 
@@ -54,14 +65,29 @@ const EventForm = (props) => {
           />
 
           <Form.Label> info:</Form.Label>
-
           <Form.Control
             id="info"
             type="text"
             value={newInfo}
             name="info"
             onChange={infoChange}
-          />
+           />
+           <Form.Label> time:</Form.Label>
+           <Form.Control
+             id="time"
+             type="text"
+             value={newTime}
+             name="time"
+             onChange={timeChange}
+            />
+           <Form.Label> date:</Form.Label>
+           <Form.Control
+              id="date"
+              type="text"
+              value={newDate}
+              name="date"
+              onChange={dateChange}
+             />
           <Button id="submit-button" variant="primary" type="submit">
             Create Event
           </Button>

@@ -34,15 +34,5 @@ const remove = (id) => {
   return request.then(response => response.data)
 }
 
-const likeEvent = async (id) => {
-  const changedEvent = await axios.get(`${baseUrl}/${id}`)
-  changedEvent.data.likes = changedEvent.data.likes + 1
-  return axios.put(`${baseUrl}/${id}`, changedEvent.data)
-}
-const commentEvent = async (id, comment) => {
-  const changedEvent = await axios.get(`${baseUrl}/${id}`)
-  changedEvent.data.comments.push(comment)
-  return axios.put(`${baseUrl}/${id}`, changedEvent.data)
-}
 
-export default { getAll, create, update, setToken, remove, likeEvent, commentEvent }
+export default { getAll, create, update, setToken, remove }

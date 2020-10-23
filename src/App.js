@@ -26,72 +26,67 @@ import { initializeEvents } from "./reducers/eventReducer";
 import eventService from "./services/events";
 
 const App = props => {
-  const loggedLoginJSON = window.localStorage.getItem("loggedEventappLogin");
+	const loggedLoginJSON = window.localStorage.getItem("loggedEventappLogin");
 
-  useEffect(() => {
-    props.initializeEvents();
-    props.initializeUsers();
-    if (loggedLoginJSON) {
-      const login = JSON.parse(loggedLoginJSON);
-      props.setLoginFromToken(login);
-      eventService.setToken(login.token);
-    }
-  }, []);
+	useEffect(() => {
+		props.initializeEvents();
+		props.initializeUsers();
+		if (loggedLoginJSON) {
+			const login = JSON.parse(loggedLoginJSON);
+			props.setLoginFromToken(login);
+			eventService.setToken(login.token);
+		}
+	}, []);
 
-  const meta = {
-    meta: {
-      charset: "utf-8"
-    }
-  };
-  return (
-<div>
-    <div class="container">
-      <Router>
-        <Header />
-        <Notification />
-        <Switch>
-          <Route path="/events/:id">
-            <Event />
-          </Route>
-             <Route path="/contact">
-                <Contact />
-              </Route>
-          <Route path="/events">
-            <Events />
-          </Route>
-           {props.login ? ( 
-             <Route path="/addevent">
-                <EventForm />
-              </Route>
-                      
-                  ) : (
-              <Route path="/login">
-                 <LoginForm />
-                          </Route>
-                      )}
-                  <Route path="/">
-                      <FrontPage />
-                  </Route>
-              </Switch>
-      </Router>
-    </div>
-<div>
-<Footer />
-</div>
-</div>
-  );
+	return (
+		<div>
+			<div class="container">
+				<Router>
+					<Header />
+					<Notification />
+					<Switch>
+						<Route path="/events/:id">
+							<Event />
+						</Route>
+						<Route path="/contact">
+							<Contact />
+						</Route>
+						<Route path="/events">
+							<Events />
+						</Route>
+						{props.login ? (
+							<Route path="/addevent">
+								<EventForm />
+							</Route>
+
+						) : (
+								<Route path="/login">
+									<LoginForm />
+								</Route>
+							)}
+						<Route path="/">
+							<FrontPage />
+						</Route>
+					</Switch>
+				</Router>
+			</div>
+			<div>
+				<Footer />
+			</div>
+		</div>
+	);
 };
 
 const dispatchToProps = {
-  setLoginFromToken,
-  initializeUsers,
-  initializeEvents
+	setLoginFromToken,
+	initializeUsers,
+	initializeEvents
 };
 const mapStateToProps = state => {
-  return {
-    login: state.login,
-    users: state.users
-  };
+	return {
+		login: state.login,
+		users: state.users
+	};
 };
 
 export default connect(mapStateToProps, dispatchToProps)(App);

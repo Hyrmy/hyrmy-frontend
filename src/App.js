@@ -14,6 +14,8 @@ import FrontPage from "./components/FrontPage";
 import Events from "./components/Events";
 import Event from "./components/Event";
 import EventForm from "./components/EventForm";
+import Contact from "./components/Contact";
+
 
 //Reducers
 import { setLoginFromToken } from "./reducers/loginReducer";
@@ -42,6 +44,7 @@ const App = props => {
     }
   };
   return (
+
     <div class="container">
       <Router>
         <Header />
@@ -50,6 +53,9 @@ const App = props => {
           <Route path="/events/:id">
             <Event />
           </Route>
+             <Route path="/contact">
+                <Contact />
+              </Route>
           <Route path="/events">
             <Events />
           </Route>

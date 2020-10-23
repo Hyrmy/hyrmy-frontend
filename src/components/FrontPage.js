@@ -5,24 +5,16 @@ const FrontPage = props => {
   return (
     <div>
       <p>
-        Raskaan musiikin yst{"\u00E4"}v{"\u00E4"}t!
+        Metal Club of Helsinki University
+
       </p>
-      <p>Hei fuksit, vaihto-oppilaat ja muut uudet kasvot!</p>
+      <p>Hey freshers, exchange students, and other new faces!</p>
       <p>
-        Helsingin yliopiston raskaan musiikin yst{"\u00E4"}v{"\u00E4"}t - HYRMY
-        on Helsingin yliopiston piiriss{"\u00E4"} toimiva j{"\u00E4"}rjest{"\u00F6"}, jonka tarkoituksena on raskaan musiikin harrastajien yhdist{"\u00E4"}minen
-        ja heid{"\u00E4"}n harrastuksensa tukeminen. HYRMY on asiaansa uskova
-        joukko ihmisi{"\u00E4"}, joille metallimusiikki on syd{"\u00E4"}nt{"\u00E4"} l{"\u00E4"}hell{"\u00E4"}. Tervetuloa!
-      </p>
+The friends of heavy music of Helsinki University (abr. HYRMY) is an organization operating in the University of Helsinki domain. Our objectives are to unite the metal music enthusiasts and to promote their interests. HYRMY is a devoted bunch of people with metal music close to heart. Welcome!      </p>
       <p>
-        HYRMY tarjoaa j{"\u00E4"}senilleen villi{"\u00E4"} menoa ja seuraa
-        raskaan musiikin harrastuksen kaikissa olomuodoissa. J{"\u00E4"}rjest{"\u00E4"}mme musiikinpauhuisia kerhoiltoja, henkevi{"\u00E4"} keskusteluja
-        musiikki-iltojen muodossa, remuamme keikoilla ja festivaaleilla ja j{"\u00E4"}rjest{"\u00E4"}mme l{"\u00E4"}j{"\u00E4"}p{"\u00E4"}itt{"\u00E4"}in
-        muuta oheistoimintaa. Jos kaipaat siskoja ja velji{"\u00E4"} el{"\u00E4"}m{"\u00E4"}n raskaalla taipaleella, me olemme j{"\u00E4"}rjest{"\u00F6"}si.
-      </p>
+HYRMY offers its members neverending madness and company with every imaginable form of heavy music. We organise loud club nights where music blares, spirited discussions in the form of our music nights, our hordes roam around gigs and festivals, and on top of all that the club features vast arrays of other related activities. If you are looking for brothers and sisters on the heavy journey that is life, we are your organisation.      </p>
       <p>
-        Alle on koostettu j{"\u00E4"}rjest{"\u00F6"}st{"\u00E4"} tiukka
-        informaatiorutistus, joten tutustuthan siihen!
+We have crafted a tight information blast for you down below, go through it to find out more!
       </p>
 
       <iframe
@@ -35,41 +27,17 @@ const FrontPage = props => {
       />
 
       <h3>
-        HYRMY:n historian ja toiminnan lyhyt oppim{"\u00E4"}{"\u00E4"}r{"\u00E4"}
+A crash course in HYRMY's history and activities
       </h3>
       <p>
-        Kaikki alkoi 26.3.2002 (ainakin virallisesti), kun HYRMY hyv{"\u00E4"}ksyttiin
-        HYY:n alaiseksi j{"\u00E4"}rjest{"\u00F6"}ksi sen aikaisten perustajaj{"\u00E4"}senten aloitteesta. Silloin HYRMY, eli Helsingin yliopiston raskaan
-        musiikin yst{"\u00E4"}v{"\u00E4"}t, koostui pienest{"\u00E4"}{" "}
-        kaveriporukasta, joita yhdisti ennen kaikkea rakkaus metalliin. Nyky{"\u00E4"}{"\u00E4"}n j{"\u00E4"}rjest{"\u00F6"}{"\u00E4"} tuskin voi en{"\u00E4"}{"\u00E4"} kutsua pieneksi, sill{"\u00E4"} n{"\u00E4"}iden 18 vuoden
-        aikana j{"\u00E4"}senm{"\u00E4"}{"\u00E4"}r{"\u00E4"} on kivunnut vain kourallisesta muutamaan sataseen.
-        Muutos on silminn{"\u00E4"}ht{"\u00E4"}viss{"\u00E4"} j{"\u00E4"}rjest{"\u00F6" }n tapahtumissa; perustamisen aikoihin kaikki hyrmyl{"\u00E4"}iset
-        saattoivatkin mahtua yhden saman p{"\u00F6"}yd{"\u00E4"}n {"\u00E4"}{"\u00E4"}reen keskustelemaan musiikista tuopillisen kera, mutta viime
-        vuosina suurimmissa tapahtumissa p{"\u00F6"}yti{"\u00E4"} on ollut pakko olla useampia - istumapaikoista puhumattakaan.
+        Everything began on March 26, 2002 (at least officially) when the founding members of HYRMY sought to operate as an official organization under the student union of Helsinki university. At that time, HYRMY, i.e. Helsingin yliopiston raskaan musiikin yst{"\u00E4"}v{"\u00E4"}t, was only a small group of friends who had a shared love for metal music. Nowadays, the organization can barely be called small as the number of members has grown from just a handful over two hundred in the span of these 18 years. The growth is apparent in the organization's events; at the time of the organization's founding, all members could surely fit around one table to talk about music and drink beer, but in recent years, the most popular events have more often than not needed several tables - not to mention seats.
       </p>
 
       <p>
-        Vaikka kasvaneet k{"\u00E4"}vij{"\u00E4"}m{"\u00E4"}{"\u00E4"}r{"\u00E4"}t ovatkin toisinaan tehneet musiikin asettamisesta
-        keski{"\u00F6"}{"\u00F6"}n haastavaa, ja meno on sen vuoksi monessa k{"\u00E4"}{"\u00E4"}ntess{"\u00E4"} uhannut menn{"\u00E4"} pelk{"\u00E4"}n ryypp{"\u00E4"}
-        {"\u00E4"}misen puolelle, HYRMY pit{"\u00E4"}{"\u00E4"} nyky{"\u00E4"}{"\u00E4"}n aktiivisesti huolta siit{"\u00E4"}, ett{"\u00E4"}{" "}
-        perustajien musiikkipainotteinen visio pysyy elinvoimaisena j{"\u00E4"}rjest{"\u00F6"}n ytimess{"\u00E4"}. Kaljoittelun vastapainoksi ja vision edist{"\u00E4"}miseksi on kehitelty muunmuassa vuonna 2015 alkunsa saaneet
-        musiikki-illat, joissa painopiste lep{"\u00E4"}{"\u00E4"} ensisijaisesti musiikin kuuntelussa ja siit{"\u00E4"}{" "}
-        keskustelemisessa. Muita musiikkipainotteisia tapahtumia ovat esimerkiksi keikkaetkot, joista voi hakea hyv{"\u00E4"}n noususuhdanteen
-        ja seuran milloin mink{"\u00E4"}kin b{"\u00E4"}ndin keikalle. J{"\u00E4"}rjest{"\u00F6"}lle on kertynyt my{"\u00F6"}s jonkinlaista kokemusta
-        keikkaj{"\u00E4"}rjest{"\u00E4"}j{"\u00E4"}n{"\u00E4"} toimimisesta,
-        joskin tuo toiminta on viime vuosina j{"\u00E4"}
-        {"\u00E4"}nyt enemm{"\u00E4"}n taka-alalle. Huhut kuitenkin kertovat,
-        ett{"\u00E4"} keikkatoimintaa olisi tarkoitus her{"\u00E4"}tell{
-          "\u00E4"
-        }{" "}
-        j{"\u00E4"}lleen eloon, kunhan olosuhteet sen joskus sallivat.
+Even though the growing number of participants and members has at times proved challenging in terms of keeping the drink from completely taking music's place from the spotlight, HYRMY ensures that the founding members' music orientated vision stays alive and well at the core of the organization. To keep the organization's activities from sliding into pure mindless drinking and to revitalize the founding members' vision, HYRMY created in 2015 the concept of music nights, where the focus is primarily on music and conversation about music. Other music orientated activities include, for example, pre-gig nights, where good company and good mood gathers to celebrate all sorts of bands' live music. HYRMY also has some former experience as a gig organizer, though admittedly there's been a few years' break from such activities. The rumors however tell that there are plans for bringing HYRMY-gigs back to life as soon as the circumstances happen to allow it.
       </p>
       <p>
-        J{"\u00E4"}senm{"\u00E4"}{"\u00E4"}r{"\u00E4"}n kasvusta ja sen tuomista muutoksista huolimatta yksi asia on aina pysynyt ja tulee pysym{"\u00E4"}{"\u00E4"}n tulevinakin vuosina samana: rakkaus metalliin. T{"\u00E4"}m{"\u00E4"}n yhdist{"\u00E4"}v{"\u00E4"}n tekij{"\u00E4"}n vuoksi ei tarvitse
-        huolehtia siit{"\u00E4"}, etteik{"\u00F6"} tapahtumissa l{"\u00F6"}ytyisi
-        jotain seuraa ja keskustelunaihetta. Ei v{"\u00E4"}li{"\u00E4"} sill{"\u00E4"}, mist{"\u00E4"} genreist{"\u00E4"} pid{"\u00E4"}t, mist{"\u00E4"}
-        maasta olet kotoisin tai mit{"\u00E4"} p{"\u00E4"}{"\u00E4"}ainetta opiskelet - kaikki metallimusiikkiin intohimoisesti
-        suhtautuvat ovat tervetulleita HYRMY:yn!
+Despite the growing number of participants and members and the changes it has caused in the organization's activities, one thing has and will always remain the same: love for metal music. This shared passion ensures that there's no need to worry about finding company or topics for discussion in HYRMY's events. No matter the genres you prefer, your nationality, or the subject you major in - all lovers of metal are welcome to HYRMY!
       </p>
     </div>
   );

@@ -25,11 +25,14 @@ const Header = props => {
   return (
     <div style={headerStyle}>
       <Link style={padding} to="/">
-        Etusivu
+        Front Page
       </Link>
 
       <Link style={padding} to="/events">
         Events
+      </Link>
+      <Link style={padding} to="/contact">
+        Contact us
       </Link>
 
       {!props.login ? (

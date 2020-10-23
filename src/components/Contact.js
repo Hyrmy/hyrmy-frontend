@@ -19,7 +19,7 @@ Lepp{"\u00E4"}suonkatu 11</p>
 
 
 
-<a href="https://www.google.com/maps/place/Lepp%C3%A4suonkatu+11,+00100+Helsinki/@60.1693334,24.9196846,17z/data=!3m1!4b1!4m5!3m4!1s0x46920a3684d24cf7:0x20eb40ae3dbcf36a!8m2!3d60.1693334!4d24.9218733">Show in Google maps</a>
+<a href="https://www.google.com/maps/place/Lepp%C3%A4suonkatu+11,+00100+Helsinki">Show in Google maps</a>
 
 
 <h4>Email</h4>

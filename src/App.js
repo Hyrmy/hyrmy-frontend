@@ -44,7 +44,7 @@ const App = props => {
     }
   };
   return (
-
+<div>
     <div class="container">
       <Router>
         <Header />
@@ -75,6 +75,10 @@ const App = props => {
               </Switch>
       </Router>
     </div>
+<div>
+<Footer />
+</div>
+</div>
   );
 };
 

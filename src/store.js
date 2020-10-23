@@ -8,16 +8,16 @@ import notificationReducer from './reducers/notificationReducer'
 import userReducer from './reducers/userReducer'
 
 const reducer = combineReducers({
-  events: eventReducer,
-  login: loginReducer,
-  notification: notificationReducer,
-  users: userReducer
+	events: eventReducer,
+	login: loginReducer,
+	notification: notificationReducer,
+	users: userReducer
 })
 
 const store = createStore(reducer,
-  composeWithDevTools(
-    applyMiddleware(thunk)
-  )
+	composeWithDevTools(
+		applyMiddleware(thunk)
+	)
 )
 
 export default store

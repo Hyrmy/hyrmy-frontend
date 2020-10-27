@@ -40,9 +40,12 @@ const App = props => {
 
 	return (
 		<div>
-			<div class="container">
-				<Router>
+			<Router>
+				<div>
 					<Header />
+				</div>
+				<div class="container">
+
 					<Notification />
 					<Switch>
 						<Route path="/events/:id">
@@ -68,11 +71,12 @@ const App = props => {
 							<FrontPage />
 						</Route>
 					</Switch>
-				</Router>
-			</div>
-			<div>
-				<Footer />
-			</div>
+
+				</div>
+				<div>
+					<Footer />
+				</div>
+			</Router>
 		</div>
 	);
 };

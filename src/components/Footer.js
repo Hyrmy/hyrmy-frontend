@@ -22,7 +22,7 @@ const Footer = props => {
 		textColor: 'white',
 		padding: '35px'
 	};
-		const logoColumn = {
+	const logoColumn = {
 		float: 'left',
 		width: '33%',
 		height: '100px',
@@ -33,18 +33,18 @@ const Footer = props => {
 		content: "",
 		clear: 'both'
 	};
-//, paddingRight: '100px'
+	//, paddingRight: '100px'
 
 	return (
 		//Musta footer
 		<div class="row" style={row}>
 			<div class="logoColumn" style={logoColumn}>
-				<div style={{float:'right'}}>
+				<div style={{ float: 'right' }}>
 					<img alt="hyrmy-footer" src="../../hyrmy-footer.png" width="80" height="80" />
 				</div>
 			</div>
 			<div class="middleColumn" style={middleColumn}>
-				<p style={{ color: 'white'}}>Helsingin yliopiston raskaan musiikin ystävät - HYRMY<br />Ulrika klusteri, Leppäsuonkatu 11, 00100 HELSINKI</p>
+				<p style={{ color: 'white' }}>Helsingin yliopiston raskaan musiikin ystävät - HYRMY<br />Ulrika klusteri, Leppäsuonkatu 11, 00100 HELSINKI</p>
 			</div>
 
 			<div class="someColumn" style={someColumn}>

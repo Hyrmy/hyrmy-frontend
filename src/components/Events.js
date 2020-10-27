@@ -3,28 +3,36 @@ import { connect } from 'react-redux'
 import { removeEvent } from '../reducers/eventReducer'
 import { createSuccessNotification, createErrorNotification, clearNotification } from '../reducers/notificationReducer'
 import { Link } from "react-router-dom"
-import { Table } from 'react-bootstrap'
 
 
 
 
 const Events = (props) => {
+	const rowStyle = {
+		borderRadius: '25px',
+		background: "black",
+		padding: "25px",
+		width: "600px",
+	};
+	const tableStyle = {
+		borderCollapse: "separate",
+		borderSpacing: "50px"
 
+	};
 	return (
-		<div>
+		<div style={{ height: "900px" }}>
 			<h2>Events</h2>
-			<Table striped>
-				<tbody>
-					{props.visibleEvents.map(event =>
-						<tr key={event.id}>
-							<td>
-								<Link to={`events/${event.id}`} ><h3>{`${event.title}`}</h3></Link>
-							</td>
-						</tr>
-					)}
-				</tbody>
 
-			</Table>
+			<table style={tableStyle}>
+				{props.visibleEvents.map(event =>
+					<tr key={event.id} style={rowStyle}>
+						<td style={rowStyle}>
+							<Link to={`events/${event.id}`} style={{color:"white"}} ><h3>{`${event.title}`}</h3></Link>
+						</td>
+					</tr>
+				)}
+
+			</table>
 
 		</div >
 

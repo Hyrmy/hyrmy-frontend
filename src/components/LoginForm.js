@@ -26,7 +26,7 @@ const LoginForm = (props) => {
 
 
   return (
-    <div>
+    <div style={{ height: "900px" }}>
       <h2>Login</h2>
 
       <Form onSubmit={handleLogin}>

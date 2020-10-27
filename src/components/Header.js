@@ -5,12 +5,15 @@ import { clearLogin } from "../reducers/loginReducer";
 
 const Header = props => {
 	const headerStyle = {
-		border: "solid",
+		backgroundColor: "black",
 		borderWidth: 5,
-		padding: 10
+		padding: 10,
+		height: "80px",
+		textAlign: 'center'
 	};
 	const padding = {
-		padding: 5
+		padding: 5,
+		color: "white"
 	};
 	const toRight = {
 		padding: 5,
@@ -23,21 +26,14 @@ const Header = props => {
 	};
 	return (
 		<div style={headerStyle}>
-			<Link style={padding} to="/">
-				Front Page
-      </Link>
-
-			<Link style={padding} to="/events">
-				Events
-      </Link>
-			<Link style={padding} to="/contact">
-				Contact us
-      </Link>
+			<Link style={padding} to="/"><h4 style={{display:"inline"}}>Front Page</h4></Link>
+			<Link style={padding} to="/events"><h4 style={{display:"inline"}}>Events</h4></Link>
+			<Link style={padding} to="/contact"><h4 style={{display:"inline"}}>Contact us</h4></Link>
 
 			{!props.login ? (
-				<Link style={padding} to="/login">
-					Admin login
-				</Link>
+				<Link style={padding} to="/login"><h4 style={{display:"inline"}}>Admin login</h4></Link>
+
+
 			) : (
 					<div>
 						<Link style={padding} to="/addevent">Add new event</Link>

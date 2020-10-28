@@ -13,11 +13,13 @@ const Header = props => {
 	};
 	const padding = {
 		padding: 5,
-		color: "white"
+		color: "white",
+		display: "inline"
 	};
 	const toRight = {
 		padding: 5,
-		float: "right"
+		float: "right",
+		display: "inline"
 	};
 
 	const handleLogout = async event => {
@@ -26,19 +28,21 @@ const Header = props => {
 	};
 	return (
 		<div style={headerStyle}>
-			<Link style={padding} to="/"><h4 style={{display:"inline"}}>Front Page</h4></Link>
-			<Link style={padding} to="/events"><h4 style={{display:"inline"}}>Events</h4></Link>
-			<Link style={padding} to="/contact"><h4 style={{display:"inline"}}>Contact us</h4></Link>
+			<Link style={padding} to="/"><h4 style={{ display: "inline" }}>Front Page</h4></Link>
+			<Link style={padding} to="/events"><h4 style={{ display: "inline" }}>Events</h4></Link>
+			<Link style={padding} to="/contact"><h4 style={{ display: "inline" }}>Contact us</h4></Link>
+			<Link style={padding} to="/applyform"><h4 style={{ display: "inline" }}>Join Hyrmy</h4></Link>
 
 			{!props.login ? (
-				<Link style={padding} to="/login"><h4 style={{display:"inline"}}>Admin login</h4></Link>
+				<Link style={padding} to="/login"><h4 style={{ display: "inline" }}>Admin login</h4></Link>
 
 
 			) : (
-					<div>
-						<Link style={padding} to="/addevent">Add new event</Link>
+					<div style={{ display: "inline" }}>
+						<Link style={padding} to="/addevent"><h4 style={{ display: "inline" }}>Add new event</h4></Link>
+						<Link style={padding} to="/applies"><h4 style={{ display: "inline" }}>Applies</h4></Link>
 
-						<p>Logged in {props.login.username}
+						<p style={{ color: "white", display: "inline", float: "right" }}>Logged in as {props.login.username}
 							<button style={toRight} onClick={handleLogout}>Logout </button>
 						</p>
 					</div>

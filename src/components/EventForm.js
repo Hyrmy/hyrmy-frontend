@@ -28,6 +28,8 @@ const EventForm = (props) => {
 
 	const addEvent = (event) => {
 		event.preventDefault()
+		console.log("props.user: ",props.user)
+		
 		props.createEvent({
 			title: newTitle,
 			info: newInfo,

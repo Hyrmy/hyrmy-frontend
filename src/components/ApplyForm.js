@@ -55,7 +55,6 @@ const ApplyForm = (props) => {
 		setNewNotes('')
 
 	}
-	console.log(newHyyMember)
 
 
 	return (

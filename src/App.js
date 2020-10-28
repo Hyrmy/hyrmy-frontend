@@ -80,7 +80,7 @@ const App = props => {
 								<Applies />
 							</Route>
 						) : (null)}
-						<Route path="/">
+						<Route path="*">
 							<FrontPage />
 						</Route>
 					</Switch>

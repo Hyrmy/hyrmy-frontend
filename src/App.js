@@ -83,6 +83,9 @@ const App = props => {
 						<Route path="*">
 							<FrontPage />
 						</Route>
+						<Route>
+							<FrontPage />
+						</Route>
 					</Switch>
 
 				</div>
